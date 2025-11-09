@@ -20,7 +20,6 @@ world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
 
 world.beforeEvents.playerBreakBlock.subscribe((event) => {
     if (event.block.typeId !== "maca_vf:safe_box") return;
-
     const dp = event.dimension.getEntitiesAtBlockLocation(event.block.bottomCenter()).shift().getDynamicProperty("maca_vf:safe_box");
     if (dp !== event.player.id) {
         event.cancel = true;
