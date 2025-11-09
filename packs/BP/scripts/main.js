@@ -37,3 +37,4 @@ import "./furniture/exhaustParticle";
 import "./furniture/ceilingFan";
 import "./furniture/containerTest";
 import "./furniture/laundryBasket";
+import "./furniture/safeBox";
