@@ -27,6 +27,7 @@ import "./furniture/gardenLanterns";
 import "./furniture/wallPlateStorage";
 import "./furniture/wallJuiceStorage";
 import "./furniture/sinkVanity";
+import "./furniture/kitchenSink";
 import "./multiblock/multiblock";
 import "./furniture/waterDispenser";
 import "./furniture/recordPlayer";

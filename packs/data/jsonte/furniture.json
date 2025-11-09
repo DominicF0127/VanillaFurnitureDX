@@ -4,6 +4,21 @@
     // Kitchen
     // ---------------------
     {
+      "id": "kitchen_sink",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 3,
+        "tag": "multiblock:_1000_2100_3200"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "woodVariants",
+        "kitchenSink"
+      ]
+    },
+    {
       "id": "dining_table",
       "placementFilter": { "allowedFaces": ["up"] },
       "multiblock": {
@@ -660,6 +675,54 @@
         "cardinalDirection",
         "placementFilter",
         "multiblock",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "picnic_table",
+      // "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 4,
+        "tag": "multiblock:_1000_2001_3002_4003"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 1",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -2],
+              "size": [16, 8, 10]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -2],
+              "size": [16, 8, 10]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:part') == 4",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 8, 10]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 8, 10]
+            }
+          }
+        }
+      ],
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "permutations",
         "tags",
         "customComponents",
         "woodVariants"
@@ -1327,6 +1390,15 @@
         "placementFilter",
         "containerBlock",
         "woodVariants"
+      ]
+    },
+    {
+      "id": "safe_box",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock"
       ]
     },
     {

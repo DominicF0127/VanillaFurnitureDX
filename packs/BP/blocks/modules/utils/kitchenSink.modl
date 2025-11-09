@@ -1,0 +1,34 @@
+{
+  "$module": "kitchenSink",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "maca_vf:open": [false, true],
+          "maca_vf:sink": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "1": "q.block_state('maca_vf:part') == 1",
+            "1_open": "q.block_state('maca_vf:part') == 1 && q.block_state('maca_vf:open') == true",
+            "1_close": "q.block_state('maca_vf:part') == 1 && q.block_state('maca_vf:open') == false",
+            // 
+            "2": "q.block_state('maca_vf:part') == 2",
+            "2_open": "q.block_state('maca_vf:part') == 2 && q.block_state('maca_vf:open') == true",
+            "2_close": "q.block_state('maca_vf:part') == 2 && q.block_state('maca_vf:open') == false",
+            "water": "q.block_state('maca_vf:part') == 2 && q.block_state('maca_vf:sink') == true",
+            //
+            "3": "q.block_state('maca_vf:part') == 3",
+            "3_open": "q.block_state('maca_vf:part') == 3 && q.block_state('maca_vf:open') == true",
+            "3_close": "q.block_state('maca_vf:part') == 3 && q.block_state('maca_vf:open') == false"
+          }
+        },
+        "tag:{{NAMESPACE}}:container_block": {},
+        "tag:maca_vf:container_block.multiblock": {},
+        "minecraft:custom_components": ["{{NAMESPACE}}:container_block", "maca_vf:kitchen_sink"]
+      }
+    }
+  }
+}
