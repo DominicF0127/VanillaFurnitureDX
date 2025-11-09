@@ -1,0 +1,22 @@
+{
+  "$module": "containerBlock",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:open": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "open": "q.block_state('{{NAMESPACE}}:open') == true",
+            "close": "q.block_state('{{NAMESPACE}}:open') == false"
+          }
+        },
+        "tag:{{NAMESPACE}}:container_block": {},
+        "minecraft:custom_components": ["{{NAMESPACE}}:container_block"]
+      }
+    }
+  }
+}

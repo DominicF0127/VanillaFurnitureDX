@@ -1,0 +1,33 @@
+{
+  "$module": "candelabra",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:lit": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:custom_components": ["{{NAMESPACE}}:candelabra"],
+        "minecraft:tick": {
+          "interval_range": [20, 20],
+          "looping": true
+        }
+      },
+      "permutations": [
+        {
+          "condition": "query.block_state('{{NAMESPACE}}:lit') == true ",
+          "components": {
+            "minecraft:light_emission": 15
+          }
+        },
+        {
+          "condition": "query.block_state('{{NAMESPACE}}:lit') == false ",
+          "components": {
+            "minecraft:light_emission": 0
+          }
+        }
+      ]
+    }
+  }
+}

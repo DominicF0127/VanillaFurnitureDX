@@ -1,0 +1,54 @@
+{
+  "$module": "gardenLantern",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:hanging": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:light_emission": 15,
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "lantern": "query.block_state('{{NAMESPACE}}:hanging') == false ",
+            "hanging": "query.block_state('{{NAMESPACE}}:hanging') == true "
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:garden_lanterns"],
+        "minecraft:tick": {
+          "interval_range": [20, 20],
+          "looping": true
+        }
+      },
+      "permutations": [
+        {
+          "condition": "query.block_state('{{NAMESPACE}}:hanging') == false ",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-3, 0, -3],
+              "size": [6, 8, 6]
+            },
+            "minecraft:selection_box": {
+              "origin": [-3, 0, -3],
+              "size": [6, 8, 6]
+            }
+          }
+        },
+        {
+          "condition": "query.block_state('{{NAMESPACE}}:hanging') == true ",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-3, 2, -3],
+              "size": [6, 8, 6]
+            },
+            "minecraft:selection_box": {
+              "origin": [-3, 2, -3],
+              "size": [6, 8, 6]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

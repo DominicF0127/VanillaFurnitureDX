@@ -1,0 +1,86 @@
+{
+  "$template": {
+    "format_version": "1.21.70",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "{{NAMESPACE}}:sittable",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+      "components": {
+        "minecraft:type_family": {
+          "family": ["sittable", "inanimate", "{{NAMESPACE}}"]
+        },
+        "minecraft:health": { "value": 1, "max": 1, "min": 1 },
+        "minecraft:damage_sensor": {
+          "triggers": [{ "cause": "all", "deals_damage": "no" }]
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": ["player"],
+          "interact_text": "Interact to sit",
+          "seats": { "position": [0, 0, 0] }
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:push_through": {
+          "value": 1
+        },
+        "minecraft:collision_box": { "width": 0, "height": 0 },
+        "minecraft:timer": {
+          "looping": true,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "{{NAMESPACE}}:despawn_seat",
+            "target": "self"
+          }
+        }
+      },
+      "component_groups": {
+        "{{NAMESPACE}}:instant_despawn": {
+          "minecraft:instant_despawn": {}
+        },
+        "{{#0..9}}": {
+          "{{NAMESPACE}}:seat_position:0.0_0.{{value}}_0.0": {
+            "minecraft:rideable": {
+              "seat_count": 1,
+              "family_types": ["player"],
+              "interact_text": "Interact to sit",
+              "seats": { "position": [0, "{{=(value / 10.0)}}", 0] }
+            }
+          }
+        }
+      },
+      "events": {
+        "{{NAMESPACE}}:despawn_seat": {
+          "sequence": [
+            {
+              "filters": {
+                "test": "rider_count",
+                "subject": "self",
+                "operator": "equals",
+                "value": 0
+              },
+              "add": { "component_groups": ["{{NAMESPACE}}:instant_despawn"] }
+            }
+          ]
+        },
+        "{{#0..9}}": {
+          "{{NAMESPACE}}:seat_position:0.0_0.{{value}}_0.0": {
+            "add": {
+              "component_groups": [
+                "{{NAMESPACE}}:seat_position:0.0_0.{{value}}_0.0"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

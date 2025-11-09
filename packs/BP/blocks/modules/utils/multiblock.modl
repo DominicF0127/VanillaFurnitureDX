@@ -1,0 +1,34 @@
+{
+  "$module": "multiblock",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:part": {
+            "values": {"min": 1, "max": "{{=multiblock.partCount}}"}
+          }
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "identifier": "geometry.{{NAMESPACE}}.{{geometry?.id ?? id}}",
+          "bone_visibility": {
+            "{{#1..multiblock.partCount}}": {
+              "{{value}}": "q.block_state('{{NAMESPACE}}:part') == {{value}}"
+            }
+          }
+        },
+        "tag:{{NAMESPACE}}:{{multiblock.tag}}": {},
+        "minecraft:item_visual": {
+          "geometry": "{{itemVisual?.geometry ?? ('geometry.' + NAMESPACE + '.' + id + '.item_visual')}}",
+          "material_instances": {
+            "*": { 
+              "texture": "{{itemVisual?.texture ?? (NAMESPACE + '.' + id + (extendModl.contains('woodVariants') ? '_oak' : extendModl.contains('colorVariants') ? '_white' : ''))}}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

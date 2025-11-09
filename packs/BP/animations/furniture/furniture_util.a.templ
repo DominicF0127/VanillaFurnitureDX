@@ -1,0 +1,25 @@
+{
+  "$template": {
+    "format_version": "1.8.0",
+    "animations": {
+      "animation.{{NAMESPACE}}.furniture.instant_despawn": {
+        "loop": true,
+        "animation_length": 0.1,
+        "timeline": {
+          "0.0": [
+            "/execute if block ~~~ minecraft:air run event entity @s {{NAMESPACE}}:instant_despawn"
+          ]
+        }
+      },
+      "animation.{{NAMESPACE}}.furniture.container_util.despawn": {
+        "loop": true,
+        "animation_length": 0.5,
+        "timeline": {
+          "0.5": [
+            "/execute if block ~~~ minecraft:air run scriptevent {{NAMESPACE}}:container_util container_util_despawn"
+          ]
+        }
+      }
+    }
+  }
+}

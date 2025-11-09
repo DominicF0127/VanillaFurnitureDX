@@ -1,0 +1,179 @@
+{
+  "$module": "digitalClock",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:time": {
+            "values": { "min": 0, "max": 11 }
+          }
+        }
+      },
+      "components": {
+        "minecraft:custom_components": ["maca_vf:digital_clock"],
+        "minecraft:tick": {
+          "interval_range": [40, 40],
+          "looping": true
+        }
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:time') == 1",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_1",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 2",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_2",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 3",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_3",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 4",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_4",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 5",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_5",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 6",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_6",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 7",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_7",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 8",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_8",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 9",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_9",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 10",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_10",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 11",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_11",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('maca_vf:time') == 0",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "maca_vf.digital_clock_12",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

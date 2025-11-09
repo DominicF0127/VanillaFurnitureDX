@@ -1,0 +1,8 @@
+pack.name=Vanilla Furniture RP
+pack.description=By: Maca Designs
+##
+maca_vf:itemGroup.vanillaFurniture.name=§bVanilla Furniture§r
+maca_vf:itemGroup.vanillaBlocks.name=§bVanilla Blocks§r
+maca_vf:itemGroup.vanillaItems.name=§bVanilla Items§r
+##
+action.hint.exit.maca_vf:sittable=§bSneak to stand up§r

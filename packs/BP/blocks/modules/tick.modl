@@ -1,0 +1,17 @@
+{
+  "$module": "tick",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        // "tick": {
+        //      "intervalRange": [20, 20],
+        //      "looping": true
+        // }
+        "minecraft:tick": {
+          "interval_range": "{{=tick?.intervalRange ?? [20, 20]}}",
+          "looping": "{{=tick?.looping ?? true}}"
+        }
+      }
+    }
+  }
+}

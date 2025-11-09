@@ -1,0 +1,23 @@
+{
+  "$module": "juiceRack",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:juice_stack": [0, 1, 2, 3]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "1": "q.block_state('{{NAMESPACE}}:juice_stack') >= 1",
+            "2": "q.block_state('{{NAMESPACE}}:juice_stack') >= 2",
+            "3": "q.block_state('{{NAMESPACE}}:juice_stack') >= 3"
+          }
+        },
+        // "minecraft:loot": "loot_tables/empty.loot.json",
+        "minecraft:custom_components": ["{{NAMESPACE}}:juice_rack"]
+      }
+    }
+  }
+}

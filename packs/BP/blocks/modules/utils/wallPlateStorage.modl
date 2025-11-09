@@ -1,0 +1,24 @@
+{
+  "$module": "wallPlateStorage",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:plate_stack": [0, 1, 2, 3, 4, 5]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "1": "q.block_state('{{NAMESPACE}}:plate_stack') >= 1",
+            "2": "q.block_state('{{NAMESPACE}}:plate_stack') >= 2",
+            "3": "q.block_state('{{NAMESPACE}}:plate_stack') >= 3",
+            "4": "q.block_state('{{NAMESPACE}}:plate_stack') >= 4",
+            "5": "q.block_state('{{NAMESPACE}}:plate_stack') >= 5"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:wall_plate_storage"]
+      }
+    }
+  }
+}

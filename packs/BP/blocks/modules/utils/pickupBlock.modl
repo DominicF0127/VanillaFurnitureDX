@@ -1,0 +1,10 @@
+{
+  "$module": "pickupBlock",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        "minecraft:custom_components": ["maca_vf:pickup_block"]
+      }
+    }
+  }
+}

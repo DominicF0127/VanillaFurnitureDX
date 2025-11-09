@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/maca/vf/blocks/furniture/water_flowing.png",
+    "atlas_tile": "sink_water_flowing",
+    "ticks_per_frame": 10
+  }
+]

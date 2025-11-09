@@ -1,0 +1,108 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.maca_vf.blanket_pile",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 3, 10],
+							"uv": {
+								"north": {"uv": [10, 20], "uv_size": [10, 3]},
+								"east": {"uv": [20, 10], "uv_size": [10, 3]},
+								"south": {"uv": [20, 13], "uv_size": [10, 3]},
+								"west": {"uv": [20, 16], "uv_size": [10, 3]},
+								"up": {"uv": [0, 0], "uv_size": [10, 10]},
+								"down": {"uv": [0, 20], "uv_size": [10, -10]}
+							}
+						},
+						{
+							"origin": [-5, 3, -5],
+							"size": [10, 2, 10],
+							"pivot": [0, 0, 0],
+							"rotation": [0, 15, 0],
+							"uv": {
+								"north": {"uv": [20, 19], "uv_size": [10, 2]},
+								"east": {"uv": [20, 21], "uv_size": [10, 2]},
+								"south": {"uv": [10, 23], "uv_size": [10, 2]},
+								"west": {"uv": [20, 23], "uv_size": [10, 2]},
+								"up": {"uv": [10, 0], "uv_size": [10, 10]},
+								"down": {"uv": [10, 20], "uv_size": [10, -10]}
+							}
+						},
+						{
+							"origin": [-5, 5, -5],
+							"size": [10, 2, 10],
+							"pivot": [0, 0, 0],
+							"rotation": [0, -20, 0],
+							"uv": {
+								"north": {"uv": [10, 25], "uv_size": [10, 2]},
+								"east": {"uv": [20, 25], "uv_size": [10, 2]},
+								"south": {"uv": [10, 27], "uv_size": [10, 2]},
+								"west": {"uv": [20, 27], "uv_size": [10, 2]},
+								"up": {"uv": [0, 20], "uv_size": [10, 10]},
+								"down": {"uv": [20, 10], "uv_size": [10, -10]}
+							}
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"thirdperson_righthand": {
+					"rotation": [75, 45, 0],
+					"translation": [0, 2.5, 1.5],
+					"scale": [0.375, 0.375, 0.375],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"thirdperson_lefthand": {
+					"rotation": [75, 45, 0],
+					"translation": [0, 2.5, 1.5],
+					"scale": [0.375, 0.375, 0.375],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"firstperson_righthand": {
+					"rotation": [0, 90, 0],
+					"translation": [-1.25, 5.5, 0],
+					"scale": [0.4, 0.4, 0.4],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"firstperson_lefthand": {
+					"rotation": [0, 90, 0],
+					"translation": [-1.25, 5.5, 0],
+					"scale": [0.4, 0.4, 0.4],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"ground": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 3, 0],
+					"scale": [0.3, 0.3, 0.3],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"gui": {
+					"rotation": [30, -135, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.625, 0.625, 0.625],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": true
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "$module": "showerHead",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:shower_on": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:custom_components": ["{{NAMESPACE}}:shower_head"],
+        "minecraft:tick": {
+          "interval_range": [20, 20],
+          "looping": true
+        }
+      }
+    }
+  }
+}

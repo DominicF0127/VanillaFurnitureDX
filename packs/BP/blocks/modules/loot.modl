@@ -1,0 +1,10 @@
+{
+  "$module": "loot",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        "minecraft:loot": "{{loot ?? 'loot_tables/empty.loot.json'}}"
+      }
+    }
+  }
+}

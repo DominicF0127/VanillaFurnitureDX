@@ -1,0 +1,21 @@
+{
+  "$module": "placementFilter",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        // "placementFilter": {
+        //      "allowedFaces": ['all'],
+        //      "blockFilter": []
+        // }
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "allowed_faces": "{{=placementFilter?.allowedFaces ?? ['all']}}",
+              "block_filter": "{{=placementFilter?.blockFilter ?? []}}"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

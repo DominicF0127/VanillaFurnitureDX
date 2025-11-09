@@ -1,0 +1,16 @@
+{
+  "$module": "permutations",
+  "$template": {
+    "minecraft:block": {
+      // "permutations": [
+      //   {
+      //     "condition": "query.block_state('{{NAMESPACE}}:count') == 1 ",
+      //     "components": {
+      //       "minecraft:collision_box": true
+      //     }
+      //   }
+      // ]
+      "permutations": "{{=permutations}}"
+    }
+  }
+}

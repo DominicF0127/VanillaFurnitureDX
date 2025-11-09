@@ -1,0 +1,11 @@
+{
+  "$module": "displayName",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        // "displayName": "Maca Display Name"
+        "minecraft:display_name": "{{displayName}}"
+      }
+    }
+  }
+}

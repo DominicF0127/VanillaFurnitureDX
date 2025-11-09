@@ -1,0 +1,21 @@
+{
+  "$module": "kitchenTimer",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:timer_on": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "on": "q.block_state('{{NAMESPACE}}:timer_on') == true",
+            "off": "q.block_state('{{NAMESPACE}}:timer_on') == false"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:kitchen_timer"]
+      }
+    }
+  }
+}

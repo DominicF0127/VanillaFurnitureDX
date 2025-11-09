@@ -1,0 +1,26 @@
+{
+  "$module": "microwave",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:microwave_open": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "open": "q.block_state('{{NAMESPACE}}:microwave_open') == true",
+            "close": "q.block_state('{{NAMESPACE}}:microwave_open') == false"
+          }
+        },
+        "tag:{{NAMESPACE}}:microwave": {},
+        "minecraft:custom_components": ["{{NAMESPACE}}:microwave"],
+        "minecraft:tick": {
+          "interval_range": [20, 20],
+          "looping": true
+        }
+      }
+    }
+  }
+}

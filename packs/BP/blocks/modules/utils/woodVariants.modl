@@ -1,0 +1,178 @@
+{
+  "$module": "woodVariants",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:wood_variant": {
+            "values": {
+              "min": 0,
+              "max": 11
+            }
+          }
+        }
+      },
+      "components": {
+        "minecraft:custom_components": ["{{NAMESPACE}}:wood_variants"]
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 0",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_oak",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 1",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_spruce",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 2",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_birch",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 3",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_jungle",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 4",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_acacia",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 5",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_dark_oak",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 6",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_mangrove",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 7",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_cherry",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 8",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_pale_oak",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 9",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_bamboo",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 10",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_crimson",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:wood_variant') == 11",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_warped",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

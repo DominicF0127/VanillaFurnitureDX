@@ -1,0 +1,20 @@
+{
+  "$module": "laundryBasket",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:laundry": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "laundry": "q.block_state('{{NAMESPACE}}:laundry') == true"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:laundry_basket"]
+      }
+    }
+  }
+}

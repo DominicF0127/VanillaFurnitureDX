@@ -1,0 +1,64 @@
+{
+  "$module": "drinkingGlass",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:drinking_glass_stack": [1, 2, 3]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "3": "q.block_state('{{NAMESPACE}}:drinking_glass_stack') == 3",
+            "2": "q.block_state('{{NAMESPACE}}:drinking_glass_stack') == 2",
+            "1": "q.block_state('{{NAMESPACE}}:drinking_glass_stack') == 1"
+          }
+        },
+        "minecraft:loot": "loot_tables/empty.loot.json",
+        "minecraft:custom_components": ["{{NAMESPACE}}:drinking_glass_stack"]
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:drinking_glass_stack') == 3",
+          "components": {
+            "minecraft:selection_box": {
+              "origin": [-3.5, 0, -3],
+              "size": [7, 4, 7]
+            },
+            "minecraft:collision_box": {
+              "origin": [-3.5, 0, -3],
+              "size": [7, 4, 7]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:drinking_glass_stack') == 2",
+          "components": {
+            "minecraft:selection_box": {
+              "origin": [-3.5, 0, 1],
+              "size": [7, 4, 3]
+            },
+            "minecraft:collision_box": {
+              "origin": [-3.5, 0, 1],
+              "size": [7, 4, 3]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:drinking_glass_stack') == 1",
+          "components": {
+            "minecraft:selection_box": {
+              "origin": [-1.5, 0, 1],
+              "size": [3, 4, 3]
+            },
+            "minecraft:collision_box": {
+              "origin": [-1.5, 0, 1],
+              "size": [3, 4, 3]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

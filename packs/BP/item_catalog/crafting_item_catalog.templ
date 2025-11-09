@@ -1,0 +1,24 @@
+{
+  "$template": {
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+      "categories": [
+        {
+          // Valid values are construction, equipment, nature, and items
+          "category_name": "construction",
+          "groups": [
+            {
+              "group_identifier": {
+                "icon": "maca_vf:alarm_clock",
+                "name": "maca_vf:itemGroup.vanillaFurniture.name"
+              },
+              "{{#furniture}}": {
+                "items": ["{{NAMESPACE}}:{{id}}"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$module": "geometry",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        "minecraft:geometry": {
+        //   "identifier": "geometry.{{NAMESPACE}}.{{id}}",
+          "identifier": "geometry.{{NAMESPACE}}.{{geometry?.id ?? id}}", //{{itemVisual.geometry ?? ('geometry.' + NAMESPACE + '.' + id)
+          "bone_visibility": "{{=geometry?.boneVisibility ?? {}}}"
+        }
+      }
+    }
+  }
+}

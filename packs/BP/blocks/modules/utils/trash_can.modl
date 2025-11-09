@@ -1,0 +1,21 @@
+{
+  "$module": "trashCan",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:trash_can_open": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "open": "q.block_state('{{NAMESPACE}}:trash_can_open') == true",
+            "close": "q.block_state('{{NAMESPACE}}:trash_can_open') == false"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:trash_can"]
+      }
+    }
+  }
+}

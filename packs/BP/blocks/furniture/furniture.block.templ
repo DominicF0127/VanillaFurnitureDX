@@ -1,0 +1,46 @@
+{
+  "$files": {
+    "array": "furniture",
+    "fileName": "{{id}}.block"
+  },
+  "$extend": "{{=extendModl ?? []}}",
+  "$template": {
+    "format_version": "1.21.60",
+    "minecraft:block": {
+      "description": {
+        "identifier": "{{NAMESPACE}}:{{id}}",
+        "menu_category": {
+          "category": "{{menuCategory ?? 'construction'}}"
+        }
+      },
+      "components": {
+        "minecraft:selection_box": "{{=selectionBox ?? true}}",
+        "minecraft:collision_box": "{{=collisionBox ?? selectionBox ?? true}}",
+        "minecraft:destructible_by_mining": {
+          "seconds_to_destroy": 1
+        },
+        "minecraft:destructible_by_explosion": {
+          "explosion_resistance": 15
+        },
+        "minecraft:flammable": {
+          "destroy_chance_modifier": 20,
+          "catch_chance_modifier": 5
+        },
+        "minecraft:light_dampening": "{{=lightDampening ?? 0}}",
+        "minecraft:light_emission": "{{=lightEmission ?? 0}}",
+        "minecraft:geometry": {
+          "identifier": "geometry.{{NAMESPACE}}.{{id}}"
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "{{NAMESPACE}}.{{id}}",
+            "render_method": "{{renderMethod ?? 'alpha_test'}}",
+            "face_dimming": false,
+            "ambient_occlusion": false
+          }
+        },
+        "minecraft:map_color": "{{mapColor ?? '#5f4a2b'}}"
+      }
+    }
+  }
+}

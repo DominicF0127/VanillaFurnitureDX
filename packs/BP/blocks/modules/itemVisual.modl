@@ -1,0 +1,22 @@
+{
+  "$module": "itemVisual",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        "minecraft:item_visual": {
+          // "itemVisual": {
+          //      "geo": "maca_vf.geo_name",
+          //      "texture": "maca_vf.texture_name"
+          // }
+          // "geometry": "geometry.{{itemVisual.geo}}",
+          "geometry": "{{itemVisual?.geometry ?? ('geometry.' + NAMESPACE + '.' + id + '.item_visual')}}",
+          "material_instances": {
+            "*": { 
+              "texture": "{{itemVisual?.texture ?? (NAMESPACE + '.' + id)}}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "$module": "colorVariants",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:color_variant": {
+            "values": {
+              "min": 0,
+              "max": 15
+            }
+          }
+        }
+      },
+      "components": {
+        "minecraft:custom_components": ["{{NAMESPACE}}:color_variants"]
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 0",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_white",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 1",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_light_gray",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 2",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_gray",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 3",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_black",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 4",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_brown",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 5",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_red",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 6",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_orange",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 7",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_yellow",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 8",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_lime",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 9",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_green",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 10",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_cyan",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 11",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_light_blue",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 12",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_blue",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 13",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_purple",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 14",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_magenta",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:color_variant') == 15",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "{{NAMESPACE}}.{{id}}_pink",
+                "render_method": "{{renderMethod ?? 'alpha_test'}}",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

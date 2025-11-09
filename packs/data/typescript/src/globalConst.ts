@@ -1,0 +1,1 @@
+export const NAMESPACE = "maca_vf";

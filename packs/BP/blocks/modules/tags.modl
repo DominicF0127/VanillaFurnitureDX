@@ -1,0 +1,13 @@
+{
+  "$module": "tags",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        // "tags": [tag_name, ...]
+        "{{#tags}}": {
+            "tag:{{value}}": {}
+        }
+      }
+    }
+  }
+}

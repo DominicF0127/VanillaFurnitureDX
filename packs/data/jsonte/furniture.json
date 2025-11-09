@@ -1,0 +1,1680 @@
+{
+  "furniture": [
+    // ---------------------
+    // Kitchen
+    // ---------------------
+    {
+      "id": "dining_table",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2001"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "fridge",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "permutations",
+        "colorVariants",
+        "containerMultiblock"
+      ]
+    },
+    {
+      "id": "water_dispenser",
+      "selectionBox": { "origin": [-6, 0, -6], "size": [12, 16, 12] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "customComponents": ["maca_vf:water_dispenser"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "customComponents"
+      ]
+    },
+    {
+      "id": "sink",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "sinkVanity",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "sink_vanity",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "sinkVanity",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "oven",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "microwave"]
+    },
+    {
+      "id": "pastry_shelf_empty",
+      "placementFilter": { "allowedFaces": ["up", "side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "pastry_shelf",
+      "placementFilter": { "allowedFaces": ["up", "side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "wall_hook",
+      "selectionBox": { "origin": [-8, 8, -1], "size": [16, 8, 9] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "wall_kitchen_shelf",
+      "selectionBox": { "origin": [-8, 12, -1], "size": [16, 4, 9] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "wall_plate_storage",
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "woodVariants",
+        "wallPlateStorage"
+      ]
+    },
+    {
+      "id": "wall_juice_storage",
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "woodVariants",
+        "wallJuiceStorage"
+      ]
+    },
+    {
+      "id": "spice_rack_empty",
+      "selectionBox": { "origin": [-8, 0, 3], "size": [16, 12, 5] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "spice_rack",
+      "selectionBox": { "origin": [-8, 0, 3], "size": [16, 12, 5] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "towel_rack",
+      "selectionBox": { "origin": [-8, 8, 5], "size": [16, 8, 3] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "colorVariants"]
+    },
+    {
+      "id": "recipe_bookstand",
+      "selectionBox": { "origin": [-4, 0, -1], "size": [8, 7, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "salt_and_pepper",
+      "selectionBox": { "origin": [-3, 0, 2], "size": [6, 4, 2] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "juice_rack",
+      "selectionBox": { "origin": [-5, 0, 2], "size": [10, 16, 6] },
+      "placementFilter": { "allowedFaces": ["up", "side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "juiceRack"]
+    },
+    {
+      "id": "juice",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "juice"]
+    },
+    {
+      "id": "water_pitcher",
+      "selectionBox": { "origin": [-2, 0, 1], "size": [4, 5, 4] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "drinking_glass",
+      "selectionBox": { "origin": [-1.5, 0, 1], "size": [3, 4, 3] },
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "drinkingGlass"]
+    },
+    {
+      "id": "water_drinking_glass",
+      "selectionBox": { "origin": [-1.5, 0, 1], "size": [3, 4, 3] },
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "loot": "loot_tables/blocks/furniture/drinking_glass.loot.json",
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "loot",
+        "pickupBlock"
+      ]
+    },
+    {
+      "id": "juice_drinking_glass",
+      "selectionBox": { "origin": [-1.5, 0, 1], "size": [3, 4, 3] },
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "loot": "loot_tables/blocks/furniture/drinking_glass.loot.json",
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "loot",
+        "pickupBlock"
+      ]
+    },
+    {
+      "id": "tea_kettle",
+      "selectionBox": { "origin": [-2.5, 0, 0], "size": [5, 4, 5] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "mug",
+      "selectionBox": { "origin": [-1.5, 0, -1.5], "size": [3, 3, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "customComponents": ["maca_vf:mug"],
+      "extendModl": ["cardinalDirection", "placementFilter", "customComponents"]
+    },
+    {
+      "id": "mug_of_tea",
+      "selectionBox": { "origin": [-1.5, 0, -1.5], "size": [3, 3, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "customComponents": ["maca_vf:basic_steam_particle"],
+      "loot": "loot_tables/blocks/furniture/mug.loot.json",
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "customComponents",
+        "tick",
+        "loot",
+        "pickupBlock"
+      ]
+    },
+    {
+      "id": "food_scale",
+      "selectionBox": { "origin": [-4, 0, -1], "size": [8, 6, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "coffee_maker",
+      "selectionBox": { "origin": [-4, 0, -2], "size": [8, 8, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "chopping_board",
+      "selectionBox": { "origin": [-5, 0, -2], "size": [10, 1, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "blender",
+      "selectionBox": { "origin": [-3, 0, -1], "size": [6, 8, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "toaster",
+      "selectionBox": { "origin": [-4, 0, -1], "size": [8, 5, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "mixer",
+      "selectionBox": { "origin": [-3, 0, -3], "size": [6, 6, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "microwave",
+      "selectionBox": { "origin": [-6, 0, -2], "size": [12, 6, 7] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "microwave"]
+    },
+    {
+      "id": "kitchen_timer",
+      "selectionBox": { "origin": [-2, 0, 1], "size": [4, 4, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "kitchenTimer"]
+    },
+    {
+      "id": "tissue",
+      "selectionBox": { "origin": [-3, 0, 1], "size": [6, 2, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "napkin",
+      "selectionBox": { "origin": [-1.5, 0, 1], "size": [3, 6, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "rice_cooker",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 6, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "soup_tureen",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 5, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "plate",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "plate"]
+    },
+    {
+      "id": "plate_rack",
+      "selectionBox": { "origin": [-6, 0, -7], "size": [12, 4, 14] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "plateRack"]
+    },
+    {
+      "id": "bread_basket",
+      "selectionBox": { "origin": [-8, 0, -5], "size": [16, 3, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "breadBasket"]
+    },
+    {
+      "id": "apple_basket",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 3, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "appleBasket"]
+    },
+    {
+      "id": "knife_holder",
+      "selectionBox": { "origin": [-2.5, 0, 0], "size": [5, 5, 4] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "rolling_pin",
+      "selectionBox": { "origin": [-4, 0, 2], "size": [8, 2, 2] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "utensils",
+      "selectionBox": { "origin": [-8, 3, 6], "size": [16, 13, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "pot_rack",
+      "selectionBox": { "origin": [-8, 3, 6], "size": [16, 13, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    // ---------------------
+    // Bathroom
+    // ---------------------
+    {
+      "id": "corner_shelf",
+      "selectionBox": { "origin": [-8, 0, 0], "size": [8, 16, 8] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, 0],
+              "size": [8, 14, 8]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, 0],
+              "size": [8, 14, 8]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "multiblock",
+        "permutations",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "corner_shelf_empty",
+      "selectionBox": { "origin": [-8, 0, 0], "size": [8, 16, 8] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, 0],
+              "size": [8, 14, 8]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, 0],
+              "size": [8, 14, 8]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "multiblock",
+        "permutations",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "mirror",
+      "selectionBox": { "origin": [-6, 3, 3], "size": [12, 13, 5] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "standing_mirror",
+      "selectionBox": { "origin": [-8, 0, 2], "size": [16, 16, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, 2],
+              "size": [16, 14, 6]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, 2],
+              "size": [16, 14, 6]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "permutations",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "wall_bathroom_shelf",
+      "selectionBox": { "origin": [-8, 10, 0], "size": [16, 6, 8] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "toothbrush",
+      "selectionBox": { "origin": [-1.5, 0, 2], "size": [3, 4, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "comb_and_brush",
+      "selectionBox": { "origin": [-1.5, 0, 2], "size": [3, 6, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "shampoo",
+      "selectionBox": { "origin": [-3.5, 0, 1], "size": [7, 4, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "hair_care_set",
+      "selectionBox": { "origin": [-4, 0, -0.5], "size": [8, 4, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "bathroom_towel_rack",
+      "selectionBox": { "origin": [-8, 8, 4], "size": [16, 8, 4] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "toilet_paper",
+      "selectionBox": { "origin": [-4, 11, 4], "size": [9, 5, 4] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "toilet",
+      "selectionBox": { "origin": [-5, 0, -6], "size": [10, 8, 14] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "shower_head",
+      "selectionBox": { "origin": [-2.5, 7, 0], "size": [5, 4, 8] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "showerHead"]
+    },
+    {
+      "id": "bathtub",
+      "selectionBox": { "origin": [-7, 0, -8], "size": [15, 9, 16] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -8],
+              "size": [15, 9, 16]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -8],
+              "size": [15, 9, 16]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "multiblock",
+        "permutations",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "bathtub_water",
+      "selectionBox": { "origin": [-7, 0, -8], "size": [15, 9, 16] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -8],
+              "size": [15, 9, 16]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -8],
+              "size": [15, 9, 16]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "multiblock",
+        "permutations",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "big_bathtub",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 10, 16] },
+      "multiblock": {
+        "partCount": 4,
+        "tag": "multiblock:_1000_2100_3001_4101"
+      },
+      "extendModl": ["cardinalDirection", "multiblock", "woodVariants"]
+    },
+    {
+      "id": "big_bathtub_water",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 10, 16] },
+      "multiblock": {
+        "partCount": 4,
+        "tag": "multiblock:_1000_2100_3001_4101"
+      },
+      "extendModl": ["cardinalDirection", "multiblock", "woodVariants"]
+    },
+    // ---------------------
+    // Outdoor
+    // ---------------------
+    {
+      "id": "clothesline",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "clothesline_empty",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "bench",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "outdoor_bench",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "folding_ladder",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "folding_chair",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 8, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "wooden_crate_box",
+      "extendModl": ["woodVariants"]
+    },
+    {
+      "id": "wooden_crate",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "extendModl": ["woodVariants"]
+    },
+    {
+      "id": "wall_bench",
+      "selectionBox": { "origin": [-8, 0, -3], "size": [16, 8, 11] },
+      "placementFilter": { "allowedFaces": ["up", "side"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "watering_can",
+      "selectionBox": { "origin": [-2, 0, -2], "size": [4, 5, 7] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "colorVariants"]
+    },
+    {
+      "id": "whisperleaf_plant",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter"]
+    },
+    {
+      "id": "whisperleaf_plant_pot",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 11, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter"]
+    },
+    {
+      "id": "nestleleaf_plant",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter"]
+    },
+    {
+      "id": "nestleleaf_plant_pot",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter"]
+    },
+    {
+      "id": "wheelbarrow",
+      "selectionBox": { "origin": [-5, 0, -8], "size": [10, 11, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "wheelbarrow_empty",
+      "selectionBox": { "origin": [-5, 0, -8], "size": [10, 11, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "fire_pit",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "firePit"]
+    },
+    {
+      "id": "firewood_rack",
+      "selectionBox": { "origin": [-7, 0, -7], "size": [14, 16, 15] },
+      "extendModl": ["cardinalDirection"]
+    },
+    {
+      "id": "compost_bin",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "woodVariants"]
+    },
+    {
+      "id": "hanging_sign",
+      "selectionBox": { "origin": [-8, 1, -1], "size": [16, 14, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "garden_chair",
+      "selectionBox": { "origin": [-6, 0, -6], "size": [12, 8, 13] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents"
+      ]
+    },
+    {
+      "id": "glass_garden_table",
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter"]
+    },
+    {
+      "id": "grill",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "grill"]
+    },
+    {
+      "id": "bird_bath",
+      "sound": "stone",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 16, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter"]
+    },
+    {
+      "id": "garden_concrete_lantern",
+      "sound": "stone",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 16, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "gardenLanterns"]
+    },
+    {
+      "id": "garden_wall_mounted_lantern",
+      "selectionBox": { "origin": [-2, 3, 1], "size": [4, 12, 7] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "gardenLanterns"]
+    },
+    {
+      "id": "garden_lantern",
+      "placementFilter": { "allowedFaces": ["up", "down"] },
+      "extendModl": ["placementFilter", "gardenLantern"]
+    },
+    {
+      "id": "trash_can",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 10, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "trashCan"]
+    },
+    {
+      "id": "mail_box",
+      "selectionBox": { "origin": [-2.5, 0, -3], "size": [5, 16, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "colorVariants",
+        "openAndClose"
+      ]
+    },
+    {
+      "id": "bird_house",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 16, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    // ---------------------
+    // Indoor
+    // ---------------------
+    {
+      "id": "glass_table",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "renderMethod": "blend",
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "fireplace",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 3,
+        "tag": "multiblock:_1000_2100_3200"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants",
+        "containerMultiblockTvTable"
+      ]
+    },
+    {
+      "id": "tv_table",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 3,
+        "tag": "multiblock:_1000_2100_3200"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants",
+        "containerMultiblockTvTable"
+      ]
+    },
+    {
+      "id": "sofa",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "tags",
+        "customComponents",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "rug",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 1, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "plant_decor",
+      "selectionBox": { "origin": [-3, 0, -3], "size": [6, 14, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "colorVariants"]
+    },
+    {
+      "id": "side_table",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "cabinet",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "cabinet_double",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "woodVariants",
+        "containerMultiblock"
+      ]
+    },
+    {
+      "id": "glass_cabinet",
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "air_exhaust",
+      "selectionBox": { "origin": [-4, 4, 6], "size": [8, 8, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "customComponents": ["maca_vf:exhaust_particle"],
+      "tick": "default",
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "customComponents",
+        "tick"
+      ]
+    },
+    {
+      "id": "record_player_stand",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "record_player",
+      "selectionBox": { "origin": [-7, 0, -7], "size": [14, 2, 14] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "woodVariants",
+        "recordPlayer"
+      ]
+    },
+    {
+      "id": "chair",
+      "selectionBox": { "origin": [-6, 0, -6], "size": [12, 8, 13] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "armchair",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "stool",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 6, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.2_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "bar_stool",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 11, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.5_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "side_glass_table",
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "woodVariants"]
+    },
+    {
+      "id": "lawn_chair",
+      "selectionBox": { "origin": [-5.5, 0, -6], "size": [11, 9, 12] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.4_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "rocking_chair",
+      "selectionBox": { "origin": [-6, 0, -5], "size": [12, 8, 11] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "shoes_rack",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter"]
+    },
+    {
+      "id": "wall_rack",
+      "selectionBox": { "origin": [-8, 0, -1], "size": [16, 13, 9] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "tool_rack_decor",
+      "selectionBox": { "origin": [-8, 0, 6], "size": [16, 16, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "vinyl_stand",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "trash_bin",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 10, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "colorVariants",
+        "trashBin"
+      ]
+    },
+    {
+      "id": "picture_frame",
+      "selectionBox": { "origin": [-8, 0, 6], "size": [16, 16, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "tv",
+      "selectionBox": { "origin": [-8, 0, -1.5], "size": [16, 12.5, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter"]
+    },
+    {
+      "id": "deer_antler_decor",
+      "selectionBox": { "origin": [-4, 0, 1], "size": [8, 6, 2] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "three_arm_candelabra",
+      "selectionBox": { "origin": [-5, 0, -1.25], "size": [10, 11, 2.5] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "pickupBlock",
+        "candelabra"
+      ]
+    },
+    {
+      "id": "five_arm_candelabra",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 11, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "pickupBlock", "candelabra"]
+    },
+    {
+      "id": "chandelier_candelabra",
+      "selectionBox": { "origin": [-4, 0, -5], "size": [8, 16, 8] },
+      "placementFilter": { "allowedFaces": ["down"] },
+      "extendModl": ["placementFilter", "candelabra"]
+    },
+    {
+      "id": "big_candle",
+      "selectionBox": { "origin": [-3.5, 0, 1], "size": [7, 2, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "colorVariants",
+        "bigCandle"
+      ]
+    },
+    {
+      "id": "abstract_wall_art_1",
+      "selectionBox": { "origin": [-5, 0, 7], "size": [10, 16, 1] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "abstract_wall_art_2",
+      "selectionBox": { "origin": [-5, 0, 7], "size": [10, 16, 1] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "abstract_wall_art_3",
+      "selectionBox": { "origin": [-5, 0, 7], "size": [10, 16, 1] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "laundry_basket",
+      "selectionBox": { "origin": [-6, 0, -6], "size": [12, 8, 12] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "woodVariants",
+        "laundryBasket"
+      ]
+    },
+    {
+      "id": "laundry",
+      "selectionBox": { "origin": [-6, 0, -6], "size": [12, 2, 12] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "first_aid",
+      "selectionBox": { "origin": [-8, 0, 0], "size": [16, 16, 8] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "hanging_lights",
+      "placementFilter": { "allowedFaces": ["down"] },
+      "extendModl": ["placementFilter", "hangingLights"]
+    },
+    {
+      "id": "lamp",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 14, 8] },
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["placementFilter", "woodVariants", "lamp"]
+    },
+    {
+      "id": "lamp_stand",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 16, 8] },
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-4, 0, -4],
+              "size": [8, 11, 8]
+            },
+            "minecraft:selection_box": {
+              "origin": [-4, 0, -4],
+              "size": [8, 11, 8]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "placementFilter",
+        "multiblock",
+        "permutations",
+        "woodVariants",
+        "lampStand"
+      ]
+    },
+    {
+      "id": "ceiling_fan",
+      "lightEmission": 15,
+      "selectionBox": { "origin": [-8, 8, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["down"] },
+      "customComponents": ["maca_vf:ceiling_fan"],
+      "geometry": {
+        "boneVisibility": {
+          "fan_blade": false
+        }
+      },
+      "itemVisual": {
+        "geometry": "geometry.maca_vf.ceiling_fan",
+        "texture": "maca_vf.ceiling_fan_oak"
+      },
+      "extendModl": [
+        "placementFilter",
+        "customComponents",
+        "geometry",
+        "itemVisual",
+        "woodVariants"
+      ]
+    },
+    // ---------------------
+    // Office/Room
+    // ---------------------
+    {
+      "id": "folding_screen",
+      "selectionBox": { "origin": [-8, 0, -4], "size": [16, 16, 12] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -4],
+              "size": [16, 14, 12]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -4],
+              "size": [16, 14, 12]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "multiblock",
+        "permutations",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "storage_box",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "sideboard",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "drawer_scrollrack",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "permutations",
+        "containerMultiblockDrawerBookshelf",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "drawer_bookshelf",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "permutations",
+        "containerMultiblockDrawerBookshelf",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "blueprint_table",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "umbrella_stand",
+      "selectionBox": { "origin": [-4, 0, -4], "size": [8, 16, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2010"
+      },
+      "extendModl": ["placementFilter", "multiblock", "colorVariants"]
+    },
+    {
+      "id": "drawer",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "nightstand",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "blanket_chest",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "containerBlock",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "office_chair",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 8, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "tags": ["maca_vf:seat_position:0.0_0.3_0.0"],
+      "customComponents": ["maca_vf:sittable"],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "tags",
+        "customComponents",
+        "woodVariants"
+      ]
+    },
+    {
+      "id": "desk",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "magazine_rack",
+      "selectionBox": { "origin": [-8, 0, -2], "size": [16, 16, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "woodVariants"]
+    },
+    {
+      "id": "filing_tray",
+      "selectionBox": { "origin": [-4, 0, -3], "size": [8, 7, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "alarm_clock",
+      "selectionBox": { "origin": [-3, 0, 1.5], "size": [6, 6, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "wall_clock",
+      "selectionBox": { "origin": [-4, 4, 6], "size": [8, 8, 2] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "digital_clock",
+      "selectionBox": { "origin": [-3, 0, 2], "size": [6, 3, 2] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "pickupBlock",
+        "digitalClock"
+      ]
+    },
+    {
+      "id": "modern_desktop",
+      "selectionBox": { "origin": [-6.5, 0, 2], "size": [13, 10, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter"]
+    },
+    {
+      "id": "classic_desktop",
+      "selectionBox": { "origin": [-6, 0, -1], "size": [12, 10, 9] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter"]
+    },
+    {
+      "id": "server",
+      "selectionBox": { "origin": [-3, 0, -5], "size": [6, 9, 11] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter"]
+    },
+    {
+      "id": "laptop",
+      "selectionBox": { "origin": [-4, 0, -3], "size": [8, 2, 7] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "network_router",
+      "selectionBox": { "origin": [-4.5, 0, -1], "size": [9, 2, 6] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "printer",
+      "selectionBox": { "origin": [-8, 0, -4], "size": [16, 4, 9] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "projector",
+      "selectionBox": { "origin": [-5, 0, -3], "size": [10, 4, 7] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "headset",
+      "selectionBox": { "origin": [-2.5, 0, 0], "size": [5, 9, 5] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "table_lamp",
+      "selectionBox": { "origin": [-6.5, 0, 0.5], "size": [8, 10, 3] },
+      "renderMethod": "blend",
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "tableLamp"]
+    },
+    {
+      "id": "pencils",
+      "selectionBox": { "origin": [-1.5, 0, 1], "size": [3, 4, 3] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "open_book",
+      "selectionBox": { "origin": [-6, 0, -2], "size": [12, 1, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "book_stack",
+      "selectionBox": { "origin": [-3, 0, -2], "size": [6, 5, 8] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "book_row",
+      "selectionBox": { "origin": [-5, 0, 2], "size": [10, 8, 6] },
+      "placementFilter": { "allowedFaces": ["up", "side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "calendar",
+      "selectionBox": { "origin": [-6, 3, 7], "size": [12, 12, 1] },
+      "placementFilter": { "allowedFaces": ["side"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "colorVariants"]
+    },
+    {
+      "id": "blanket_pile",
+      "selectionBox": { "origin": [-5, 0, -5], "size": [10, 7, 10] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "extendModl": ["cardinalDirection", "placementFilter", "pickupBlock"]
+    },
+    {
+      "id": "single_bed",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2001"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "bunk_bed",
+      // "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 4,
+        "tag": "multiblock:_1000_2001_3010_4011"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "double_bed",
+      "selectionBox": { "origin": [-8, 0, -8], "size": [16, 8, 16] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 4,
+        "tag": "multiblock:_1000_2100_3001_4101"
+      },
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "colorVariants"
+      ]
+    },
+    {
+      "id": "bedside_rug",
+      "selectionBox": { "origin": [-6, 0, -6], "size": [14, 1, 12] },
+      "placementFilter": { "allowedFaces": ["up"] },
+      "multiblock": {
+        "partCount": 2,
+        "tag": "multiblock:_1000_2100"
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('maca_vf:part') == 2",
+          "components": {
+            "minecraft:collision_box": {
+              "origin": [-8, 0, -6],
+              "size": [14, 1, 12]
+            },
+            "minecraft:selection_box": {
+              "origin": [-8, 0, -6],
+              "size": [14, 1, 12]
+            }
+          }
+        }
+      ],
+      "extendModl": [
+        "cardinalDirection",
+        "placementFilter",
+        "multiblock",
+        "permutations",
+        "colorVariants"
+      ]
+    }
+  ]
+}

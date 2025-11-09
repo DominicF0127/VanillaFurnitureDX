@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.maca_vf.ceiling_fan": {
+      "arrays": {
+        "textures": {
+          "Array.wood_variant": [
+            "texture.ceiling_fan_oak",
+            "texture.ceiling_fan_spruce",
+            "texture.ceiling_fan_birch",
+            "texture.ceiling_fan_jungle",
+            "texture.ceiling_fan_acacia",
+            "texture.ceiling_fan_dark_oak",
+            "texture.ceiling_fan_mangrove",
+            "texture.ceiling_fan_cherry",
+            "texture.ceiling_fan_pale_oak",
+            "texture.ceiling_fan_bamboo",
+            "texture.ceiling_fan_crimson",
+            "texture.ceiling_fan_warped"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Array.wood_variant[query.property('maca_vf:wood_variant')]"]
+    }
+  }
+}

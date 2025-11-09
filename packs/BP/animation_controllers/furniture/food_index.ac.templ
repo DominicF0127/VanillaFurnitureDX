@@ -1,0 +1,43 @@
+{
+  "$scope": {
+    "items": [
+        "porkchop",
+        "chicken",
+        "rabbit",
+        "beef",
+        "mutton",
+        "cod",
+        "salmon"
+    ]
+  },
+  "$template": {
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.{{NAMESPACE}}.furniture.food_index": {
+        "states": {
+          "default": {
+            "transitions": [
+              { "porkchop": "q.property('{{NAMESPACE}}:food_index') == 1" },
+              { "chicken": "q.property('{{NAMESPACE}}:food_index') == 2" },
+              { "rabbit": "q.property('{{NAMESPACE}}:food_index') == 3" },
+              { "beef": "q.property('{{NAMESPACE}}:food_index') == 4" },
+              { "mutton": "q.property('{{NAMESPACE}}:food_index') == 5" },
+              { "cod": "q.property('{{NAMESPACE}}:food_index') == 6" },
+              { "salmon": "q.property('{{NAMESPACE}}:food_index') == 7" }
+            ]
+          },
+          "{{#items}}": {
+            "{{value}}": {
+                "on_entry": [
+                    "/replaceitem entity @e[family=food_index,c=1,r=1] slot.weapon.mainhand 0 {{value}} 1"
+                ],
+                "transitions": [
+                    { "default": "q.property('{{NAMESPACE}}:food_index') == 0" }
+                ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "maca_vf:ceiling_fan_util",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"ceiling_fan_oak": "textures/maca/vf/blocks/furniture/ceiling_fan_oak",
+				"ceiling_fan_spruce": "textures/maca/vf/blocks/furniture/ceiling_fan_spruce",
+				"ceiling_fan_birch": "textures/maca/vf/blocks/furniture/ceiling_fan_birch",
+				"ceiling_fan_jungle": "textures/maca/vf/blocks/furniture/ceiling_fan_jungle",
+				"ceiling_fan_acacia": "textures/maca/vf/blocks/furniture/ceiling_fan_acacia",
+				"ceiling_fan_dark_oak": "textures/maca/vf/blocks/furniture/ceiling_fan_dark_oak",
+				"ceiling_fan_mangrove": "textures/maca/vf/blocks/furniture/ceiling_fan_mangrove",
+				"ceiling_fan_cherry": "textures/maca/vf/blocks/furniture/ceiling_fan_cherry",
+				"ceiling_fan_pale_oak": "textures/maca/vf/blocks/furniture/ceiling_fan_pale_oak",
+				"ceiling_fan_bamboo": "textures/maca/vf/blocks/furniture/ceiling_fan_bamboo",
+				"ceiling_fan_crimson": "textures/maca/vf/blocks/furniture/ceiling_fan_crimson",
+				"ceiling_fan_warped": "textures/maca/vf/blocks/furniture/ceiling_fan_warped"
+			},
+			"geometry": {
+				"default": "geometry.maca_vf.ceiling_fan.util"
+			},
+			"animations": {
+				"rotate": "animation.maca_vf.ceiling_fan_util.rotate"
+			},
+			"scripts": {
+				"animate": ["rotate"]
+			},
+			"render_controllers": ["controller.render.maca_vf.ceiling_fan"]
+		}
+	}
+}

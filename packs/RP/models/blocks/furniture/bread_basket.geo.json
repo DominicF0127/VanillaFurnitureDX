@@ -1,0 +1,132 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.maca_vf.bread_basket",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "basket",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 0, -5], "size": [16, 1, 10], "uv": [0, 0]},
+						{"origin": [-8, 1, -5], "size": [1, 2, 10], "uv": [0, 11]},
+						{"origin": [-7, 1, 4], "size": [14, 2, 1], "uv": [0, 23]},
+						{"origin": [-7, 1, -5], "size": [14, 2, 1], "uv": [0, 26]},
+						{"origin": [7, 1, -5], "size": [1, 2, 10], "uv": [22, 11]},
+						{"origin": [-8, 3, -2], "size": [0, 2, 4], "pivot": [-8, 3, 0], "rotation": [0, 0, -25], "uv": [16, 29]},
+						{"origin": [8, 3, -2], "size": [0, 2, 4], "pivot": [8, 3, 0], "rotation": [0, 0, 25], "uv": [16, 29], "mirror": true}
+					]
+				},
+				{
+					"name": "breads",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "5",
+					"parent": "breads",
+					"pivot": [-4, 2, -2.7],
+					"cubes": [
+						{"origin": [-3.86433, 2.55069, -1.7], "size": [5, 2, 3], "pivot": [-1.36433, 3.55069, -0.2], "rotation": [0, 0, 32.5], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "4",
+					"parent": "breads",
+					"pivot": [-1, 1.9, -0.9],
+					"cubes": [
+						{"origin": [0.15216, 1.27145, -2.55422], "size": [5, 2, 3], "pivot": [2.65216, 2.27145, -1.05422], "rotation": [-24.75948, 41.92831, -24.61432], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "2",
+					"parent": "breads",
+					"pivot": [-7, 2, -4.5],
+					"cubes": [
+						{"origin": [-7, 2, -3.5], "size": [5, 2, 3], "pivot": [-7, 2, -4.5], "rotation": [0, 0, 10], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "3",
+					"parent": "breads",
+					"pivot": [1, 1, 0.3],
+					"cubes": [
+						{"origin": [1, 1, 1.3], "size": [5, 2, 3], "pivot": [1, 1, 0.3], "rotation": [-6.1191, 21.69365, -6.17354], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "1",
+					"parent": "breads",
+					"pivot": [-7, 2, -0.5],
+					"cubes": [
+						{"origin": [-7, 2, 0.5], "size": [5, 2, 3], "pivot": [-7, 2, -0.5], "rotation": [0, 0, 10], "uv": [0, 29]}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"thirdperson_righthand": {
+					"rotation": [75, 45, 0],
+					"translation": [0, 2.5, 2.5],
+					"scale": [0.375, 0.375, 0.375],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"thirdperson_lefthand": {
+					"rotation": [75, 45, 0],
+					"translation": [0, 2.5, 2.5],
+					"scale": [0.375, 0.375, 0.375],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"firstperson_righthand": {
+					"rotation": [0, 90, 0],
+					"translation": [-1.25, 5.5, 0],
+					"scale": [0.4, 0.4, 0.4],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"firstperson_lefthand": {
+					"rotation": [0, 90, 0],
+					"translation": [-1.25, 5.5, 0],
+					"scale": [0.4, 0.4, 0.4],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"ground": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 3, 0],
+					"scale": [0.3, 0.3, 0.3],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"gui": {
+					"rotation": [30, -135, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.625, 0.625, 0.625],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": true
+				},
+				"fixed": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 0, -4],
+					"scale": [1, 1, 1],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				}
+			}
+		}
+	]
+}

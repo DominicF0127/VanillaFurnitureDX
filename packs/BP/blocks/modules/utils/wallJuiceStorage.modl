@@ -1,0 +1,23 @@
+{
+  "$module": "wallJuiceStorage",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:juice_stack": [0, 1, 2, 3, 4]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "1": "q.block_state('{{NAMESPACE}}:juice_stack') >= 1",
+            "2": "q.block_state('{{NAMESPACE}}:juice_stack') >= 2",
+            "3": "q.block_state('{{NAMESPACE}}:juice_stack') >= 3",
+            "4": "q.block_state('{{NAMESPACE}}:juice_stack') >= 4"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:wall_juice_storage"]
+      }
+    }
+  }
+}

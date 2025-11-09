@@ -1,0 +1,11 @@
+{
+  "$module": "customComponents",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        // "customComponentList": [maca:custom_component_name, ...]
+        "minecraft:custom_components": "{{=customComponents}}"
+      }
+    }
+  }
+}

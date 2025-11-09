@@ -1,0 +1,24 @@
+{
+  "$module": "containerMultiblockDrawerBookshelf",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "maca_vf:open": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "1": "q.block_state('maca_vf:part') == 1",
+            "1_open": "q.block_state('maca_vf:part') == 1 && q.block_state('maca_vf:open') == true",
+            "1_close": "q.block_state('maca_vf:part') == 1 && q.block_state('maca_vf:open') == false"
+          }
+        },
+        "tag:{{NAMESPACE}}:container_block": {},
+        "tag:maca_vf:container_block.multiblock": {},
+        "minecraft:custom_components": ["{{NAMESPACE}}:container_block"]
+      }
+    }
+  }
+}

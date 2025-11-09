@@ -1,0 +1,44 @@
+{
+  "$template": {
+    "resource_pack_name": "vanilla_furniture",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+      "{{#furniture}}": {
+        "{{NAMESPACE}}.{{id}}": {
+          "textures": "textures/maca/vf/blocks/furniture/{{id}}.png"
+        }
+        // "{{?textures}}": {
+        //   "{{#textures}}": {
+        //     "{{NAMESPACE}}.{{value}}": {
+        //       "textures": "textures/maca/vf/blocks/furniture/{{value}}.png"
+        //     }
+        //   }
+        // }
+      },
+      "{{#1..12}}": {
+        "{{NAMESPACE}}.digital_clock_{{value}}": {
+          "textures": "textures/maca/vf/blocks/furniture/digital_clock_{{value}}.png"
+        }
+      },
+      "{{#furniture.filter(x => x?.extendModl?.contains('woodVariants'))}}": {
+        "{{#woods}}": {
+          "{{NAMESPACE}}.{{id}}_{{value}}": {
+            "textures": "textures/maca/vf/blocks/furniture/{{id}}_{{value}}.png"
+          }
+        }
+      },
+      "{{#furniture.filter(x => x?.extendModl?.contains('colorVariants'))}}": {
+        "{{#colors}}": {
+          "{{NAMESPACE}}.{{id}}_{{value}}": {
+            "textures": "textures/maca/vf/blocks/furniture/{{id}}_{{value}}.png"
+          }
+        }
+      },
+      "maca_vf.hanging_lights_on": {
+        "textures": "textures/maca/vf/blocks/furniture/hanging_lights_on.png"
+      }
+    }
+  }
+}

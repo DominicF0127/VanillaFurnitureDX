@@ -1,0 +1,27 @@
+{
+  "$template": {
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "{{NAMESPACE}}:grill_util",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/{{AUTHOR}}/{{SHORTNAME}}/empty"
+        },
+        "geometry": {
+          "default": "geometry.{{NAMESPACE}}.grill_util"
+        },
+        "animations": {
+          "align_rotation": "animation.{{NAMESPACE}}.furniture.align_rotation",
+          "food_position": "animation.{{NAMESPACE}}.grill_util.food_position"
+        },
+        "scripts": {
+          "animate": ["align_rotation", "food_position"]
+        },
+        "render_controllers": ["controller.render.default"]
+      }
+    }
+  }
+}

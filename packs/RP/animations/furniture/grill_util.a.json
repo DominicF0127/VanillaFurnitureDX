@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.maca_vf.grill_util.food_position": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [17.25002, 2.99318, -9.54589],
+					// "position": [-1, 2, 4]
+					"position": [-1, 2, 4]
+				}
+			}
+		}
+	}
+}

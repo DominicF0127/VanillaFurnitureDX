@@ -1,0 +1,5 @@
+/build
+/.regolith
+/assets/photoshop_files
+*.gitkeep
+*.psd

@@ -1,0 +1,17 @@
+{
+  "$module": "loot",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "{{NAMESPACE}}.{{id}}",
+            "render_method": "{{renderMethod ?? 'alpha_test'}}",
+            "face_dimming": false,
+            "ambient_occlusion": false
+          }
+        }
+      }
+    }
+  }
+}

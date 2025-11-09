@@ -1,0 +1,26 @@
+{
+  "$template": {
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "{{NAMESPACE}}:container_util",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/{{AUTHOR}}/{{SHORTNAME}}/empty"
+        },
+        "geometry": {
+          "default": "geometry.maca_vf.empty"
+        },
+        "animations": {
+          "align_rotation": "animation.{{NAMESPACE}}.furniture.align_rotation"
+        },
+        "scripts": {
+          "animate": ["align_rotation"]
+        },
+        "render_controllers": ["controller.render.default"]
+      }
+    }
+  }
+}

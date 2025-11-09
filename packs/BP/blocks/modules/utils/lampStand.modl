@@ -1,0 +1,34 @@
+{
+  "$module": "lampStand",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:light_on": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "on": "q.block_state('{{NAMESPACE}}:light_on') == true"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:lamp_stand"]
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:light_on') == true",
+          "components": {
+            "minecraft:light_emission": 15
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:light_on') == false",
+          "components": {
+            "minecraft:light_emission": 0
+          }
+        }
+      ]
+    }
+  }
+}

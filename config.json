@@ -1,0 +1,60 @@
+{
+	"author": "Maca Designs",
+	"name": "VanillaFurniturePack",
+	"packs": {
+		"behaviorPack": "./packs/BP",
+		"resourcePack": "./packs/RP"
+	},
+	"regolith": {
+        "dataPath": "./packs/data",
+        "filterDefinitions": {
+            "json_cleaner": {"version": "latest"},
+            "jsonte": {"url": "github.com/MCDevKit/regolith-library", "version": "latest"},
+            "name_ninja": {"url": "github.com/Bedrock-OSS/regolith-filters", "version": "latest"},
+            "texture_list": {"version": "latest"}
+        },
+        "profiles": {
+            "default": {
+                "export": {"bpPath": "", "rpPath": "", "target": "development", "worldName": "", "worldPath": ""},
+                "filters": [
+                    {"filter": "json_cleaner"},
+                    {"filter": "texture_list"},
+                    {"filter": "jsonte"},
+                    {
+                        "filter": "name_ninja",
+                        "settings": {
+                            "blocks": {"auto_name": true, "postfix": "§r", "prefix": "§b"},
+                            "entities": {"auto_name": true, "postfix": "§r", "prefix": "§f"},
+                            "items": {"auto_name": true, "postfix": "§r", "prefix": "§f"},
+                            "languages": ["en_US.lang"],
+                            "overwrite": false,
+                            "spawn_eggs": {"auto_name": true, "postfix": "§r", "prefix": "§fSpawn "}
+                        }
+                    }
+                ],
+                "unsafe": false
+            },
+            "local": {
+                "export": {"bpPath": "", "rpPath": "", "target": "local", "worldName": "", "worldPath": ""},
+                "filters": [
+                    {"profile": "default"}
+                ],
+                "unsafe": false
+            },
+            "package": {
+                "export": {"bpPath": "./Packaging/Content/world_template/behavior_packs/BP_VF", "rpPath": "./Packaging/Content/world_template/resource_packs/RP_VF", "target": "exact"},
+                "filters": [
+                    {"profile": "default"}
+                ],
+                "unsafe": false
+            },
+            "packageAddon": {
+                "export": {"bpPath": "./Packaging/Content/behavior_packs/BP_VF", "rpPath": "./Packaging/Content/resource_packs/RP_VF", "target": "exact"},
+                "filters": [
+                    {"profile": "default"}
+                ],
+                "unsafe": false
+            }
+        }
+    }
+}

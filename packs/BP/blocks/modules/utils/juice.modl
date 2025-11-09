@@ -1,0 +1,50 @@
+{
+  "$module": "juice",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:juice_stack": [1, 2]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "2": "q.block_state('{{NAMESPACE}}:juice_stack') == 2",
+            "1": "q.block_state('{{NAMESPACE}}:juice_stack') == 1"
+          }
+        },
+        "minecraft:loot": "loot_tables/empty.loot.json",
+        "minecraft:custom_components": ["{{NAMESPACE}}:juice_stack"]
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:juice_stack') == 2",
+          "components": {
+            "minecraft:selection_box": {
+              "origin": [-4.5, 0, 1],
+              "size": [9, 8, 4]
+            },
+            "minecraft:collision_box": {
+              "origin": [-4.5, 0, 1],
+              "size": [9, 8, 4]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('{{NAMESPACE}}:juice_stack') == 1",
+          "components": {
+            "minecraft:selection_box": {
+              "origin": [-2, 0, 1],
+              "size": [4, 8, 4]
+            },
+            "minecraft:collision_box": {
+              "origin": [-2, 0, 1],
+              "size": [4, 8, 4]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

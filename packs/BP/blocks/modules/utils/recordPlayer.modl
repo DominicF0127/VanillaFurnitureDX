@@ -1,0 +1,30 @@
+{
+  "$module": "recordPlayer",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:play_record": {
+            "values": {
+              "min": 0,
+              "max": 15
+            }
+          }
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "on": "q.block_state('{{NAMESPACE}}:play_record') != 0",
+            "off": "q.block_state('{{NAMESPACE}}:play_record') == 0"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:record_player"],
+        "minecraft:tick": {
+          "interval_range": [30, 30],
+          "looping": true
+        }
+      }
+    }
+  }
+}

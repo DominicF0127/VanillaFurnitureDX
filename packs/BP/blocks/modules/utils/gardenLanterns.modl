@@ -1,0 +1,15 @@
+{
+  "$module": "gardenLanterns",
+  "$template": {
+    "minecraft:block": {
+      "components": {
+        "minecraft:light_emission": 15,
+        "minecraft:tick": {
+          "interval_range": [10, 10],
+          "looping": true
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:garden_lanterns"]
+      }
+    }
+  }
+}

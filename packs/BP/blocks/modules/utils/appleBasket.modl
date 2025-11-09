@@ -1,0 +1,23 @@
+{
+  "$module": "appleBasket",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:apple_stack": [0, 1, 2, 3, 4]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "1": "q.block_state('{{NAMESPACE}}:apple_stack') >= 1",
+            "2": "q.block_state('{{NAMESPACE}}:apple_stack') >= 2",
+            "3": "q.block_state('{{NAMESPACE}}:apple_stack') >= 3",
+            "4": "q.block_state('{{NAMESPACE}}:apple_stack') >= 4"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:apple_basket"]
+      }
+    }
+  }
+}

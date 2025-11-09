@@ -1,0 +1,34 @@
+{
+  "woods": [
+    "oak",
+    "spruce",
+    "birch",
+    "jungle",
+    "acacia",
+    "dark_oak",
+    "mangrove",
+    "cherry",
+    "pale_oak",
+    "bamboo",
+    "crimson",
+    "warped"
+  ],
+  "colors": [
+    "white",
+    "light_gray",
+    "gray",
+    "black",
+    "brown",
+    "red",
+    "orange",
+    "yellow",
+    "lime",
+    "green",
+    "cyan",
+    "light_blue",
+    "blue",
+    "purple",
+    "magenta",
+    "pink"
+  ]
+}

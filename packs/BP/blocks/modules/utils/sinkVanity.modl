@@ -1,0 +1,20 @@
+{
+  "$module": "sinkVanity",
+  "$template": {
+    "minecraft:block": {
+      "description": {
+        "states": {
+          "{{NAMESPACE}}:sink_open": [false, true]
+        }
+      },
+      "components": {
+        "minecraft:geometry": {
+          "bone_visibility": {
+            "water": "q.block_state('{{NAMESPACE}}:sink_open') == true"
+          }
+        },
+        "minecraft:custom_components": ["{{NAMESPACE}}:sink_vanity"]
+      }
+    }
+  }
+}
